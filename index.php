@@ -251,7 +251,7 @@ require 'PHPMailer/src/SMTP.php';
         <textarea name="message" id="" cols="30" rows="10" class="box message" placeholder="message"required></textarea>
         <button type="submit" name="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
 
-<!--<a href="mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer">Email Us</a>-->
+
 
 
     </form>
