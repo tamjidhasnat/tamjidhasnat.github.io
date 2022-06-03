@@ -35,7 +35,7 @@ require 'PHPMailer/src/SMTP.php';
 	$mail->SMTPSecure = 'tls';							
 	$mail->Port	 = 587;
 
-	$mail->setFrom('auto_gen@gmail.com','Greetings From Auto Mailer');		
+	$mail->setFrom('auto_gen@gmail.com','Greetings From '.$email.);		
 	$mail->addAddress($email);
 
 	
