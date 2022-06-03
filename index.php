@@ -243,7 +243,7 @@ require 'PHPMailer/src/SMTP.php';
 
     </div>
 
-    <form action="check.php" method="post">
+    <form action="index.php" method="post">
 
         <input type="text" name="name" placeholder="name" class="box"required>
         <input type="email" name="email"placeholder="email" class="box"required>
