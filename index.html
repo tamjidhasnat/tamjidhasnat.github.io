@@ -1,60 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
- <?php
-   use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'vendor/autoload.php';
-
-
-
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
-
-
-    
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
-		
-		$name = $_POST["name"];
-		$email = $_POST["email"];
-		$subject = $_POST["subject"];
-		$message = $_POST["message"];
-		
-		
-    if (isset($_POST['submit'])){
-		$mail = new PHPMailer(true);
-	$mail->SMTPDebug = 0;									
-	$mail->isSMTP();											
-	$mail->Host	 = 'smtp.gmail.com';					
-	$mail->SMTPAuth = true;							
-	$mail->Username = 'onlineprescription993@gmail.com';				
-	//$mail->Password = 'qwertyuiop@1234567890';						
-	$mail->Password = 'quxqyrlfrtdyqizd';						
-	$mail->SMTPSecure = 'tls';							
-	$mail->Port	 = 587;
-
-	$mail->setFrom('auto_gen@gmail.com','Greetings From '.$email.'');		
-	$mail->addAddress('tamjid.hasnat@gmail.com');
-
-	
-	$mail->isHTML(true);								
-	$mail->Subject = $subject;
-	$mail->Body = $message;
-	
-	$mail->send();
-	
-
-	}
-
-	}
-
-    ?>
-
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,6 +11,7 @@ require 'PHPMailer/src/SMTP.php';
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 <body>
 
@@ -74,7 +20,9 @@ require 'PHPMailer/src/SMTP.php';
 <header>
 
     <div class="user">
-        <img src="asset/profile2.jpg" alt="">
+        <div class="blob" id="blob">
+            <img src="asset/profile2.jpg" alt="">
+        </div>
         <h3 class="name">Tamjid Hasnat</h3>
         <p class="post">Developer</p>
     </div>
@@ -97,10 +45,22 @@ require 'PHPMailer/src/SMTP.php';
 
 <!-- home section starts  -->
 
+
 <section class="home" id="home">
 
+
     <h3>HI THERE !</h3>
-    <h1>I'M <span>Tamjid Hasnat</span></h1>
+    <h1>I'm <span class="auto-type"></span></h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Tamjid Hasnat"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: false
+        })
+    </script>
     <p>A passionate web developer who is fascinated by technology and enjoys learning about it.
     </p>
     <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
@@ -245,10 +205,10 @@ require 'PHPMailer/src/SMTP.php';
 
     <form action="index.php" method="post">
 
-        <input type="text" name="name" placeholder="name" class="box"required>
-        <input type="email" name="email"placeholder="email" class="box"required>
-        <input type="text" name="subject" placeholder="project" class="box"required>
-        <textarea name="message" id="" cols="30" rows="10" class="box message" placeholder="message"required></textarea>
+        <input type="text" name="name" placeholder="name" class="box" required>
+        <input type="email" name="email" placeholder="email" class="box" required>
+        <input type="text" name="subject" placeholder="project" class="box" required>
+        <textarea name="message" id="" cols="30" rows="10" class="box message" placeholder="message" required></textarea>
         <button type="submit" name="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
 
 
