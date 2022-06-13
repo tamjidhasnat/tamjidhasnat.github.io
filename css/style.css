@@ -91,6 +91,7 @@ header{
     justify-content: center;
     flex-flow: column;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 header .user img{
@@ -295,6 +296,12 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
+.portfolio .row .info h3{
+    font-size: 2rem;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight: normal;
+}
 .portfolio .box-container{
     display: flex;
     align-items: center;
@@ -331,15 +338,13 @@ header .navbar ul li a:hover{
 
 .contact .row .content{
     flex:1 1 30rem;
-    padding:4rem;
-    padding-bottom: 0;
+    padding: 4rem 4rem 0;
 }
 
 .contact .row form{
     flex:1 1 45rem;
     padding:2rem;
-    margin:2rem;
-    margin-bottom: 4rem;
+    margin: 2rem 2rem 4rem;
 }
 
 .contact .row form .box{
@@ -390,6 +395,22 @@ header .navbar ul li a:hover{
     display: none;
 }
 
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
 /* media queries  */
 
 @media (max-width:1200px){
@@ -415,7 +436,7 @@ header .navbar ul li a:hover{
    }
 
    header.toggle{
-    left:0%;
+    left:0;
    }
 
    body{
@@ -486,7 +507,6 @@ header .navbar ul li a:hover{
      bottom: 5px;
      left: 5px;
      background-color: #000;
-     background-image: url("https://github.com/tamjidhasnat/tamjidhasnat.github.io/blob/7fb852ea845a13c8b5959f60beaa7be07b159508/asset/profile.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
@@ -557,8 +577,7 @@ body {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: #000;
-    background: linear-gradient(#1f1f21, #000);
+    background: #000 linear-gradient(#1f1f21, #000);
 }
 
 .main {
