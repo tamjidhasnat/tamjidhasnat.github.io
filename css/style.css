@@ -295,38 +295,64 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
-.portfolio .row .info h3{
-    font-size: 2rem;
-    color:var(--yellow);
-    padding:1rem 0;
-    font-weight: normal;
-}
-.portfolio .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
-}
+/*.portfolio .card {*/
+/*    !* Add shadows to create the "card" effect *!*/
+/*    height: 20rem;*/
+/*    width: 26rem;*/
+/*    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+/*    transition: 0.3s;*/
+/*    cursor: pointer;*/
+/*    background-color: white;*/
 
-.portfolio .box-container .box{
-    height: 20rem;
-    width:26rem;
-    border-radius: 1rem;
-    margin:2rem;
-    overflow: hidden;
-    cursor: pointer;
-}
+/*}*/
+/*.portfolio .card{*/
+/*    font-size: 2rem;*/
+/*    color: #1f1f21;*/
+/*    font-weight: normal;*/
+/*    object-fit: inherit;*/
+/*}*/
+/* On mouse-over, add a deeper shadow */
+/*.portfolio .card:hover {*/
+/*    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
+/*    transform: scale(1.2);*/
+/*}*/
 
-.portfolio .box-container .box img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
-}
+/* Add some padding inside the card container */
+/*.portfolio  {*/
+/*    padding: 2px 16px;*/
+/*}*/
+/*.portfolio .row .info h3{*/
+/*    font-size: 2rem;*/
+/*    color:var(--yellow);*/
+/*    padding:1rem 0;*/
+/*    font-weight: normal;*/
+/*}*/
+/*.portfolio .box-container{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    flex-wrap: wrap;*/
+/*    padding:2rem 0;*/
+/*}*/
 
-.portfolio .box-container .box:hover img{
-    transform: scale(1.2);
-}
+/*.portfolio .box-container .box{*/
+/*    height: 20rem;*/
+/*    width:26rem;*/
+/*    border-radius: 1rem;*/
+/*    margin:2rem;*/
+/*    overflow: hidden;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.portfolio .box-container .box img{*/
+/*    height:100%;*/
+/*    width:100%;*/
+/*    object-fit: cover;*/
+/*}*/
+
+/*.portfolio .box-container .box:hover img{*/
+/*    transform: scale(1.2);*/
+/*}*/
 
 .contact .row{
     display: flex;
